@@ -1,31 +1,31 @@
 # Self-Healing Test Automation (Python + Healenium)
 
-## 🚀 Overview
+## Overview
 This project demonstrates **self-healing test automation** using **Selenium + Healenium**.
 
-## 📌 Setup & Run Instructions
+## Setup & Run Instructions
 
-### 1️⃣ Install Dependencies
+### Install Dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-### 2️⃣ Start Healenium Backend (Docker)
+### Start Healenium Backend (Docker)
 ```bash
 docker-compose up -d
 ```
 
-### 3️⃣ Run "Before" Test (Fails)
+### Run "Before" Test (Fails)
 ```bash
 pytest tests/test_before_self_healing.py --html=reports/before_self_healing.html
 ```
 
-### 4️⃣ Run "After" Test (Passes with Healenium)
+### Run "After" Test (Passes with Healenium)
 ```bash
 pytest tests/test_after_self_healing.py --html=reports/after_self_healing.html
 ```
 
-### 📊 Results
+### Results
 Check **reports/before_self_healing.html** and **reports/after_self_healing.html**.
 
 ## 🎯 Key Features
