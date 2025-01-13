@@ -1,0 +1,12 @@
+services:
+  healenium-backend:
+    image: healenium/healenium:3.4.6  # Use the latest stable version
+    container_name: healenium-backend
+    ports:
+      - "7878:7878"
+
+  selenium-hub:
+    image: selenium/standalone-chrome:latest  # Use the latest stable version
+    container_name: selenium-hub
+    ports:
+      - "4444:4444"
